@@ -6,6 +6,7 @@ A Home Assistant lovelace custom gauge card for climate instantiated by a thermo
 
 ## Usage
 Add this card via HACS (recommended)
+[HACS custom repositorie](https://hacs.xyz/docs/faq/custom_repositories)
 
 Or manually :
 Add this custom card to your home assistant instance. Reference it into your lovelace configuration.
