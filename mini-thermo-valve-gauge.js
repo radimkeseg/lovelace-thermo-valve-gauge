@@ -1,4 +1,4 @@
-console.info(`%c THERMO-VALVE-GAUGE \n%c          v0.1-beta `, 'color: orange; font-weight: bold; background: black', 'color: white; font-weight: bold; background: dimgray');
+console.info(`%c THERMO-VALVE-GAUGE \n%c          v0.2-beta `, 'color: orange; font-weight: bold; background: black', 'color: white; font-weight: bold; background: dimgray');
 class ThermoValveGauge extends HTMLElement {
   constructor() {
     super();
@@ -65,7 +65,7 @@ class ThermoValveGauge extends HTMLElement {
 					 
 					<clipPath id="clip_target_temperature" style="transform:translateY(0px); transition-duration: 2s">
 					<!-- the translateY(y) is about to be dynmically updated -->
-						<path d="M 20,144 V 286 H 5 V 144 Z"/ id="clip_g_valve_position">
+						<path d="M 20,144 V 149 H 5 V 144 Z"/ id="clip_g_valve_position">
 					</clipPath>
 					<clipPath id="clip_current_temperature" style="transform:translateY(0px); transition-duration: 2s">
 					<!-- the translateY(y) is about to be dynmically updated -->
@@ -89,12 +89,12 @@ class ThermoValveGauge extends HTMLElement {
 					   y="140" />
 					<path
 					   style=""
-					   d="M 19,145 V 285 H 13 V 145 Z"
-					   id="thermo_g_target_temperature" clip-path="url(#clip_target_temperature)" fill="green"/>
+					   d="M 19,145 V 285 H 6 V 145 Z"
+					   id="thermo_g_current_temperature" clip-path="url(#clip_current_temperature)" fill="red"/>
 					<path
 					   style=""
-					   d="M 13,145 V 285 H 6 V 145 Z"
-					   id="thermo_g_current_temperature" clip-path="url(#clip_current_temperature)" fill="red"/>
+					   d="M 19,145 V 285 H 6 V 145 Z"
+					   id="thermo_g_target_temperature" clip-path="url(#clip_target_temperature)" fill="green"/>
 					<path
 					   style=""
 					   d="M 190,145 V 284 C 182,220 170,189 162,145 Z"
