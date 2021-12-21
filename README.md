@@ -1,4 +1,4 @@
-# Lovelace tempometer-gauge-card
+# Lovelace thermo-valve-gauge
 
 A Home Assistant lovelace custom gauge card for climate instantiated by a thermometer valve such as [TuYa TS0601_thermostat](https://www.zigbee2mqtt.io/devices/TS0601_thermostat.html).
 
