@@ -21,12 +21,12 @@ Add it as a custom card to your lovelace : `'custom:thermo-valve-gauge'`.
 ### Card options
 | **Option** | **Type** | **Description** |
 |-|:-:|-|
-| `entity` ***(required)*** | string | The entity to track. Can be followed by an attribute to track `entity.attribute)`|
-| `temp_min` ***(required)*** | number | The gauge's minimum value |
-| `temp_max` ***(required)*** | number | The gauge's maximum value |
-| `measurement` | string | Custom unit of measurement |
+| `entity` ***(required)*** | string | an entity to track, make sure it is a climate entity |
+| `temp_min` ***(required)*** | number | minimum value of the temperature gauge |
+| `temp_max` ***(required)*** | number | maximum value of the temperature gauge |
+| `measurement` | string | custom unit of measurement |
 | `scale` | number | sizing factor, deafult = 1 |
-| `decimals` | number | Decimal precision of entity value. |
+| `decimals` | number | decimal precision of entity value. |
 
 An example for a picture-element:
 ```yaml
