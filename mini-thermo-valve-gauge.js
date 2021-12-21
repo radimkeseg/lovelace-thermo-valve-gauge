@@ -76,24 +76,21 @@ class ThermoValveGauge extends HTMLElement {
 						<path d="M 192,144 V 286 H 162 V 144 Z"/ id="clip_g_valve_position">
 					</clipPath>
 					
-					<path
-					   style="fill:#000000;stroke:none;fill-opacity:0.2"
-					   d="m 196,146 h 5 v 150 H 8 v -5 H 196 Z"
-					   id="thermo_g_shade"/>
 					<rect
 					   style="fill:#ffffff;fill-opacity:0.8;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 					   id="thermo_g_border"
 					   width="194"
-					   height="151"
+					   height="151"					   
 					   x="1"
-					   y="140" />
+					   y="140"
+					   ry="8" />
 					<path
 					   style=""
-					   d="M 19,145 V 285 H 6 V 145 Z"
+					   d="M 19,154 V 275 c 0,0 -0,10 -6,10 C 6,285 6,275 6,275 V 154 c 0,0 0,-8 6,-8 6,0 6,8 6,8 z"
 					   id="thermo_g_current_temperature" clip-path="url(#clip_current_temperature)" fill="red"/>
 					<path
 					   style=""
-					   d="M 19,145 V 285 H 6 V 145 Z"
+					   d="M 19,154 V 275 c 0,0 -0,10 -6,10 C 6,285 6,275 6,275 V 154 c 0,0 0,-8 6,-8 6,0 6,8 6,8 z"
 					   id="thermo_g_target_temperature" clip-path="url(#clip_target_temperature)" fill="green"/>
 					<path
 					   style=""
