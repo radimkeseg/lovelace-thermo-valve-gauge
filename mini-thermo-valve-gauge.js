@@ -104,19 +104,19 @@ class ThermoValveGauge extends HTMLElement {
 					   x="100"
 					   y="192"
 					   id="thermo_current_temperature"
-					   text-anchor="middle">25.5°C</text>
+					   text-anchor="middle">??.?°C</text>
 					<text
 					   style="font-style:normal;font-weight:normal;font-size:18px;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
 					   x="100"
 					   y="213"
 					   id="thermo_target_temperature"
-					   text-anchor="middle">20°C</text>
+					   text-anchor="middle">??.?°C</text>
 					<text
 					   style="font-style:normal;font-weight:normal;font-size:21px;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
 					   x="100"
 					   y="276"
 					   id="thermo_valve_position"
-					   text-anchor="middle">100%</text>
+					   text-anchor="middle">??%</text>
 					<text
 					   style="font-style:normal;font-weight:normal;font-size:23px;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
 					   x="100"
@@ -140,13 +140,13 @@ class ThermoValveGauge extends HTMLElement {
 					   x="22"
 					   y="154"
 					   id="thermo_g_temperature_max"
-					   text-anchor="start"">30</text>
+					   text-anchor="start"">??</text>
 					<text
 					   style="font-style:normal;font-weight:normal;font-size:10px;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
 					   x="22"
 					   y="286"
 					   id="thermo_g_temperature_min"
-					   text-anchor="start"">10</text>
+					   text-anchor="start"">??</text>
 				</g>  
 			</svg>
 		</div>	
