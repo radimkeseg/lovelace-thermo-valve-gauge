@@ -36,7 +36,7 @@ elements:
     temp_max: 25
     temp_min: 15
     measurement: °C
-    entity: climate.thermo_janek
+    entity: climate.thermo_livingroom
     scale: 1.5
     style:
       top: 75%
