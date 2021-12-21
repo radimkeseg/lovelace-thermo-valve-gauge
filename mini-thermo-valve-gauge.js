@@ -51,7 +51,7 @@ class ThermoValveGauge extends HTMLElement {
         left: 50%;
         overflow: hidden;
         text-align: center;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%, 0%);
       }	  
     `;
 	
