@@ -191,7 +191,7 @@ class ThermoValveGauge extends HTMLElement {
   }
 
   _translateValveHeight(value) {
-    return 144 - 1.44*(value);
+    return 144*(1 - (value)/100);
   }
 
   _getEntityStateValue(entity, attribute) { 
@@ -233,10 +233,25 @@ class ThermoValveGauge extends HTMLElement {
   }
 
 	if (entityState !== this._entityState) {
-      root.getElementById("thermo_current_temperature").textContent = `${entityState} ${measurement}`;
-      const height = this._translateTempHeight(entityState, config);
+	  var current_temperature = this._getEntityStateValue(hass.states[config.entity], "current_temperature");	  
+      root.getElementById("thermo_current_temperature").textContent = `${current_temperature}${measurement}`;
+      const height = this._translateTempHeight(current_temperature, config);
       root.getElementById("clip_current_temperature").style.transform = `translateY(${height}px)`;
-      this._entityState = entityState;
+
+	  var target_temperature = this._getEntityStateValue(hass.states[config.entity], "temperature");	  
+      root.getElementById("thermo_target_temperature").textContent = `${target_temperature}${measurement}`;
+      const height_target = this._translateTempHeight(target_temperature, config);
+      root.getElementById("clip_target_temperature").style.transform = `translateY(${height_target}px)`;
+	  
+	  var preset_mode = this._getEntityStateValue(hass.states[config.entity], "preset_mode");
+      root.getElementById("thermo_mode").textContent = `${preset_mode}`;
+
+	  var valve_position = this._getEntityStateValue(hass.states[config.entity], "position");
+      root.getElementById("thermo_valve_position").textContent = `${valve_position}%`;
+      const height_valve = this._translateValveHeight(valve_position);
+      root.getElementById("clip_valve").style.transform = `translateY(${height_valve}px)`;
+
+      this._entityState = entityState;		
     }
     root.lastChild.hass = hass;
   }
