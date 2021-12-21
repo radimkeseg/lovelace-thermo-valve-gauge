@@ -229,7 +229,7 @@ class ThermoValveGauge extends HTMLElement {
       }
   }
 
-	if (entityState !== this._entityState) {
+	/*if (entityState !== this._entityState)*/ {
 	  var current_temperature = this._getEntityStateValue(hass.states[config.entity], "current_temperature");	  
       root.getElementById("thermo_current_temperature").textContent = `${current_temperature}${measurement}`;
       const height = this._translateTempHeight(current_temperature, config);
