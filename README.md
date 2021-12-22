@@ -2,7 +2,8 @@
 
 A Home Assistant lovelace custom gauge card for climate instantiated by a thermometer valve such as [TuYa TS0601_thermostat](https://www.zigbee2mqtt.io/devices/TS0601_thermostat.html).
 
-![climate-with-temps-and-valve-position](https://github.com/radimkeseg/lovelace-thermo-valve-gauge/blob/main/images/thermo-valve-gauge.png)
+![thermo with temps and valve position](https://github.com/radimkeseg/lovelace-thermo-valve-gauge/blob/main/images/thermo-valve-gauge.png)
+![thermo with temps and valve positions in a picture element](https://github.com/radimkeseg/lovelace-thermo-valve-gauge/blob/main/images/thermo-valve-gauge-picture-element.png)
 
 ## Usage
 Add this card via HACS (recommended)
