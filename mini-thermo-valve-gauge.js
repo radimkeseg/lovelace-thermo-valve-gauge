@@ -77,7 +77,7 @@ class ThermoValveGauge extends HTMLElement {
 					</clipPath>
 					
 					<rect
-					   style="fill:#ffffff;fill-opacity:0.8;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+					   style="fill:#ffffff;fill-opacity:0.5;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
 					   id="thermo_g_border"
 					   width="194"
 					   height="151"					   
@@ -109,17 +109,23 @@ class ThermoValveGauge extends HTMLElement {
 					   id="thermo_target_temperature"
 					   text-anchor="middle">??.?°C</text>
 					<text
-					   style="font-style:normal;font-weight:normal;font-size:21px;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+					   style="font-style:normal;font-weight:normal;font-size:13px;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
 					   x="100"
-					   y="276"
-					   id="thermo_valve_position"
-					   text-anchor="middle">??%</text>
+					   y="230"
+					   id="thermo_friendly_name"
+					   text-anchor="middle">?</text>
 					<text
 					   style="font-style:normal;font-weight:normal;font-size:23px;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
 					   x="100"
 					   y="253"
 					   id="thermo_mode"
 					   text-anchor="middle">schedule</text>
+					<text
+					   style="font-style:normal;font-weight:normal;font-size:21px;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
+					   x="100"
+					   y="276"
+					   id="thermo_valve_position"
+					   text-anchor="middle">??%</text>
 					<text
 					   style="font-style:normal;font-weight:normal;font-size:10px;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none"
 					   x="180"
@@ -247,6 +253,9 @@ class ThermoValveGauge extends HTMLElement {
       root.getElementById("thermo_valve_position").textContent = `${valve_position}%`;
       const height_valve = this._translateValveHeight(valve_position);
       root.getElementById("clip_valve").style.transform = `translateY(${height_valve}px)`;
+
+	  var friendly_name = this._getEntityStateValue(hass.states[config.entity], "friendly_name");
+      root.getElementById("thermo_friendly_name").textContent = `${friendly_name}`;
 
       this._entityState = entityState;		
     }
