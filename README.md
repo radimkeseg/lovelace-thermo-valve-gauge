@@ -27,7 +27,7 @@ Add it as a custom card to your lovelace : `'custom:thermo-valve-gauge'`.
 | `temp_min` ***(required)*** | number | minimum value of the temperature gauge |
 | `temp_max` ***(required)*** | number | maximum value of the temperature gauge |
 | `measurement` | string | custom unit of measurement |
-| `scale` | number | sizing factor, deafult = 1 |
+| `scale` | number | sizing factor, default = 1 |
 | `decimals` | number | decimal precision of entity value. |
 
 An example for a picture-element:
