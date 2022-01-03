@@ -53,7 +53,6 @@ temp_min: 15
 measurement: °C
 entity: climate.thermo_bathroom
 scale: 2
-style:
 ```
 
 Time to time upgrading, mainly for my own purpose, anyway feel free to reuse ! 
