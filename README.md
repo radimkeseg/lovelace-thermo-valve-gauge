@@ -27,7 +27,7 @@ Add it as a custom card to your lovelace : `'custom:thermo-valve-gauge'`.
 | `temp_min` ***(required)*** | number | minimum value of the temperature gauge |
 | `temp_max` ***(required)*** | number | maximum value of the temperature gauge |
 | `measurement` | string | custom unit of measurement |
-| `scale` | number | sizing factor, deafult = 1 |
+| `scale` | number | sizing factor, default = 1 |
 | `decimals` | number | decimal precision of entity value. |
 
 An example for a picture-element:
@@ -57,6 +57,6 @@ style:
 ```
 
 Time to time upgrading, mainly for my own purpose, anyway feel free to reuse ! 
-PR are welcome and i can have a look to features requests.
+PRs are welcome ;).
 
 Thanks to [SNoof85](https://github.com/SNoof85/lovelace-tempometer-gauge-card) for inspiration.
